@@ -429,6 +429,7 @@ button {
   top: 3rem;
   left: 90%;
   transition: height 0.3s;
+  z-index: 2;
 }
 
 .gallery__link::after {
