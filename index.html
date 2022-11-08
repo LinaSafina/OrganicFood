@@ -1,14 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foods</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/95cf3c495e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--   Header -->
+    <header class="header">
+      <a class="header__logo logo" href="#">
+        <i class="fa-solid fa-seedling"></i>
+        <span class="logo__text"> Organic food</span>
+        <!-- <i class="fa-brands fa-pagelines"></i>
+        <i class="fa-brands fa-pagelines"></i> -->
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__link" href="#">
+              <i class="fa-sharp fa-solid fa-house-chimney"></i>
+              <span class="header__title">Главная</span>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__link" href="#">
+              <i class="fa-solid fa-utensils"></i>
+              <span class="header__title">Еда</span>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__link" href="#">
+              <i class="fa-solid fa-burger"></i>
+              <span class="header__title">Бургер</span>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__link" href="#">
+              <i class="fa-solid fa-pizza-slice"></i>
+              <span class="header__title">Пицца</span>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a class="header__link" href="#">
+              <i class="fa-solid fa-blender-phone"></i>
+              <span class="header__title">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__sections">
+        <div class="header__section">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <p class="header__section-title">0 <span>&#8381;</span></p>
+          <p class="header__section-text">Ваша корзина</p>
+        </div>
+        <div class="header__section">
+          <i class="fa-solid fa-key"></i>
+          <p class="header__section-title header__section-title--small">
+            Мой кабинет
+          </p>
+          <p class="header__section-text">Авторизация</p>
+        </div>
+        <!-- <div class="header__burger"><i class="fa-solid fa-bars"></i></div> -->
+      </div>
+    </header>
+    <div class="switch"></div>
+    <!-- End of Header -->
 
-        <script src="script.js"></script>
-</body>
+    <main class="main">
+      <!--   Landing section -->
+      <section class="landing">
+        <h1 class="title">Organic food</h1>
+        <div class="landing__img">
+          <i class="fa-solid fa-apple-whole shown"></i>
+          <i class="fa-solid fa-fish"></i>
+          <i class="fa-solid fa-cookie"></i>
+        </div>
+      </section>
+      <!-- End of Landing section -->
+
+      <!--   Popular section -->
+      <section class="popular">
+        <h2 class="title-2">Популярные предложения</h2>
+        <ul class="popular__list">
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="./images/card-img-1.png"
+              alt="Рыба"
+            />
+            <h3 class="popular__name">Рыба</h3>
+            <button class="popular__btn btn">Заказать</button>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="./images/card-img-2.png"
+              alt="Пирожные"
+            />
+            <h3 class="popular__name">Пирожные</h3>
+            <button class="popular__btn btn">Заказать</button>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="./images/card-img-3.png"
+              alt="Лобстеры"
+            />
+            <h3 class="popular__name">Лобстеры</h3>
+            <button class="popular__btn btn">Заказать</button>
+          </li>
+        </ul>
+      </section>
+      <!-- End of Popular section -->
+
+      <!--   Gallery section -->
+      <section class="gallery">
+        <h2 class="title-2">Галерея</h2>
+        <ul class="gallery__list">
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-1.jpg"
+                alt="Блинчики"
+              />
+              <h3 class="gallery__name">Блинчики</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-2.jpg"
+                alt="Пирожные"
+              />
+              <h3 class="gallery__name">Пирожные</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-3.jpg"
+                alt="Тосты"
+              />
+              <h3 class="gallery__name">Тосты</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-4.jpg"
+                alt="Бургеры"
+              />
+              <h3 class="gallery__name">Бургеры</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-5.jpg"
+                alt="Рыба"
+              />
+              <h3 class="gallery__name">Рыба</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+          <li class="gallery__list-item">
+            <a class="gallery__link" href="#">
+              <img
+                class="gallery__img"
+                src="./images/gallery-img-6.jpg"
+                alt="Овощи"
+              />
+              <h3 class="gallery__name">Овощи</h3>
+              <p class="gallery__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                amet libero sed delectus dicta voluptas ad, nam accusamus
+                magnam, expedita porro at? Doloribus vitae aliquam distinctio
+                illum explicabo quis debitis.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- End of Gallery section -->
+    </main>
+
+    <!--   Footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__text">
+          <div class="footer__title">Подписаться</div>
+          <p class="footer__paragraph">Узнайте первым о новых продуктах</p>
+        </div>
+        <form class="footer__form">
+          <input
+            class="footer__input"
+            placeholder="Введите свою эл. почту"
+            type="email"
+          />
+          <button class="footer__button button" type="submit">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">OrganicFood &#169; Все права защищены</p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
