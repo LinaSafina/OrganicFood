@@ -559,6 +559,10 @@ button {
   padding: 5px 10px;
 }
 
+.footer__button:hover {
+  opacity: 0.7;
+}
+
 .footer__bottom {
   border-top: 1px solid #565656;
   padding-top: 20px;
