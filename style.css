@@ -88,10 +88,10 @@ button {
   top: -20rem;
   left: 0;
   right: 0;
-  background-color: #eee;
+  background-color: #eff6e0;
   height: 20rem;
   padding: 10px;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgb(213, 213, 213);
+  box-shadow: 0.2rem 0.2rem 0.2rem #e6ebdd;
   z-index: 9;
   transition: top 0.3s ease-out;
   display: flex;
@@ -245,7 +245,7 @@ button {
   width: 10rem;
   background-color: #fbb02d;
   border-radius: 30rem 30rem 15rem 15rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(213, 213, 213);
+  box-shadow: 0.1rem 0.1rem 0.1rem #e6ebdd;
   cursor: pointer;
   transition: top 0.3s;
   z-index: 5;
@@ -259,7 +259,7 @@ button {
   height: 20rem;
   width: 1rem;
   background-color: #fbb02d;
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(213, 213, 213);
+  box-shadow: 0.1rem 0.1rem 0.1rem #e6ebdd;
 }
 
 .header.open + .switch {
@@ -325,7 +325,7 @@ button {
   box-shadow: 1rem 1rem 1rem rgba(195, 197, 199, 0.7);
   margin-bottom: 20px;
   position: relative;
-  background-color: rgb(243, 245, 246);
+  background-color: #eff6e0;
   transition: transform 0.3s;
 }
 
@@ -355,7 +355,7 @@ button {
   left: 0;
   transform: skewX(45deg);
   transform-origin: bottom;
-  background-color: rgb(205, 205, 205);
+  background-color: #e5e5e5;
 }
 
 .popular__img {
@@ -503,7 +503,7 @@ button {
 
 /* Footer styles */
 .footer {
-  background-color: #eee;
+  background-color: #e5e5e5;
   padding: 40px 50px 10px;
   height: 25rem;
   display: flex;
