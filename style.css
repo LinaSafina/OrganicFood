@@ -179,6 +179,7 @@ button {
 .header__title {
   font-weight: 700;
   letter-spacing: 0.1rem;
+  color: #333;
 }
 
 .header__sections {
@@ -301,7 +302,7 @@ button {
 
 /* Popular styles */
 .popular {
-  background-color: #eee;
+  background-color: #fafbf7;
   padding: 50px;
   min-height: 100vh;
   display: flex;
@@ -325,7 +326,7 @@ button {
   box-shadow: 1rem 1rem 1rem rgba(195, 197, 199, 0.7);
   margin-bottom: 20px;
   position: relative;
-  background-color: #eff6e0;
+  background-color: #fafbf7;
   transition: transform 0.3s;
 }
 
@@ -503,7 +504,7 @@ button {
 
 /* Footer styles */
 .footer {
-  background-color: #e5e5e5;
+  background-color: #fbb02d;
   padding: 40px 50px 10px;
   height: 25rem;
   display: flex;
@@ -526,7 +527,7 @@ button {
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.3rem;
-  color: #2a8b23;
+  color: #333;
 }
 
 .footer__paragraph {
