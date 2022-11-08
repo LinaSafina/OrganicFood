@@ -69,7 +69,7 @@ button {
 }
 
 .logo__text::first-letter {
-  color: #fb6107;
+  color: #fbb02d;
   font-weight: 900;
   font-size: 1.5em;
 }
@@ -88,10 +88,10 @@ button {
   top: -20rem;
   left: 0;
   right: 0;
-  background-color: #fbb02d;
+  background-color: #eee;
   height: 20rem;
   padding: 10px;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgb(208, 125, 57);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(213, 213, 213);
   z-index: 9;
   transition: top 0.3s ease-out;
   display: flex;
@@ -245,7 +245,7 @@ button {
   width: 10rem;
   background-color: #fbb02d;
   border-radius: 30rem 30rem 15rem 15rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(208, 125, 57);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(213, 213, 213);
   cursor: pointer;
   transition: top 0.3s;
   z-index: 5;
@@ -259,7 +259,7 @@ button {
   height: 20rem;
   width: 1rem;
   background-color: #fbb02d;
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(208, 125, 57);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(213, 213, 213);
 }
 
 .header.open + .switch {
@@ -284,7 +284,7 @@ button {
 }
 
 .landing__img i {
-  color: #fb6107;
+  color: #fbb02d;
   font-size: 48rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(117, 54, 2);
   position: absolute;
@@ -293,7 +293,7 @@ button {
 }
 
 .landing__img i.shown {
-  color: #fb6107;
+  color: #fbb02d;
   transform: translateX(-50%) scale(1);
   transition: transform 0.3s 0.3s;
 }
@@ -301,7 +301,7 @@ button {
 
 /* Popular styles */
 .popular {
-  background-color: #fff2b2;
+  background-color: #eee;
   padding: 50px;
   min-height: 100vh;
   display: flex;
@@ -373,7 +373,7 @@ button {
 }
 
 .popular__btn {
-  background-color: #fb6107;
+  background-color: #fbb02d;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -502,7 +502,7 @@ button {
 
 /* Footer styles */
 .footer {
-  background-color: #fbb02d;
+  background-color: #eee;
   padding: 40px 50px 10px;
   height: 25rem;
   display: flex;
@@ -542,7 +542,7 @@ button {
 
 .footer__input {
   padding: 10px 55px 10px 15px;
-  border: 0.2rem solid #f09d0e;
+  border: 0.2rem solid #fbb02d;
   font-size: 3rem;
   color: #565656;
 }
@@ -553,7 +553,7 @@ button {
 
 .footer__button {
   position: absolute;
-  border: 0.2rem solid #f09d0e;
+  border: none;
   background-color: #fbb02d;
   color: #fff;
   font-size: 3rem;
@@ -664,7 +664,6 @@ button {
   .header__nav {
     order: 1;
     width: 100%;
-    background-color: #fbb02db3;
     border-top: 0.2rem solid #565656;
     padding-top: 4rem;
   }
