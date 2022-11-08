@@ -48,7 +48,7 @@ button {
 }
 
 .title-2 {
-  font-size: 10rem;
+  font-size: 7rem;
   text-shadow: 0.1rem 0.1rem 0.1rem rgb(11, 37, 6);
   letter-spacing: 0.1rem;
 }
@@ -321,8 +321,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 30px;
-  width: 400px;
+  padding-bottom: 15px;
+  width: 300px;
   box-shadow: 1rem 1rem 1rem rgba(195, 197, 199, 0.7);
   margin-bottom: 20px;
   position: relative;
@@ -367,9 +367,9 @@ button {
 
 .popular__name {
   text-transform: uppercase;
-  margin: 20px;
+  margin: 30px 10px;
   letter-spacing: 0.15rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -543,7 +543,7 @@ button {
 }
 
 .footer__input {
-  padding: 10px 55px 10px 15px;
+  padding: 1rem 5.5rem 1rem 1.5rem;
   border: 0.2rem solid #fbb02d;
   font-size: 3rem;
   color: #565656;
@@ -551,6 +551,7 @@ button {
 
 .footer__input::placeholder {
   color: #565656;
+  font-size: 3rem;
 }
 
 .footer__button {
@@ -561,7 +562,7 @@ button {
   font-size: 3rem;
   font-weight: 900;
   right: 5px;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
 }
 
 .footer__button:hover {
@@ -604,8 +605,17 @@ button {
     font-size: 3rem;
   }
 
+  .title {
+    font-size: 12rem;
+  }
+
   .title-2 {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+
+  .switch {
+    height: 12rem;
+    width: 8rem;
   }
 
   .header__logo,
@@ -617,13 +627,26 @@ button {
     font-size: 2.5rem;
   }
 
+  .landing__img {
+    height: 35rem;
+  }
+
+  .landing__img i {
+    font-size: 35rem;
+  }
+
   .popular__list-item {
-    width: 300px;
-    margin: 4rem;
+    width: 250px;
+    margin: 2rem;
   }
 
   .gallery {
     padding: 50px;
+  }
+
+  .gallery__description {
+    max-height: 40%;
+    overflow: scroll;
   }
 
   .footer {
@@ -643,12 +666,8 @@ button {
 }
 
 @media screen and (max-width: 1100px) {
-  .switch {
-    left: 5rem;
-  }
-
-  .title {
-    font-size: 12rem;
+  html {
+    font-size: 5px;
   }
 
   .header__logo,
@@ -658,7 +677,7 @@ button {
 
   .header {
     flex-wrap: wrap;
-    height: 30rem;
+    height: 25rem;
     padding: 10px 10vw;
     top: -30rem;
   }
@@ -667,7 +686,7 @@ button {
     order: 1;
     width: 100%;
     border-top: 0.2rem solid #565656;
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 
   .header__list {
@@ -679,15 +698,7 @@ button {
   }
 
   .header.open + .switch {
-    top: 33rem;
-  }
-
-  .landing__img {
-    height: 35rem;
-  }
-
-  .landing__img i {
-    font-size: 35rem;
+    top: 28rem;
   }
 
   .popular__list {
@@ -695,7 +706,12 @@ button {
   }
 
   .popular__list-item {
-    width: 30vw;
+    width: 200px;
+  }
+
+  .popular__name {
+    font-size: 2rem;
+    margin: 15px 10px;
   }
 
   .gallery__list {
@@ -705,36 +721,16 @@ button {
   }
 
   .gallery__img {
-    width: 40vw;
-    height: 25vw;
+    width: 35vw;
+    height: 18vw;
   }
 
   .footer__paragraph {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .title {
-    font-size: 10rem;
-  }
-
-  .landing__img {
-    height: 30rem;
-  }
-
-  .landing__img i {
-    font-size: 30rem;
-  }
-
-  .gallery__description {
-    font-size: 1.2rem;
-  }
-
-  .gallery__name {
-    font-size: 2rem;
-  }
-
   .gallery__link::before {
     width: 1px;
   }
@@ -742,15 +738,16 @@ button {
   .gallery__link::after {
     height: 1px;
   }
+
+  .gallery__name {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  .title {
-    font-size: 10rem;
-  }
-
   .title-2 {
-    font-size: 6rem;
+    margin-bottom: 15px;
+    font-size: 4rem;
   }
 
   .header {
@@ -759,17 +756,29 @@ button {
 
   .switch {
     left: 2rem;
-    height: 12rem;
-    width: 8rem;
+  }
+
+  .header.open + .switch {
+    top: 33rem;
+  }
+
+  .popular,
+  .gallery {
+    padding: 50px 5px;
   }
 
   .popular__list-item {
     margin: 10px 5px;
+    width: 100px;
   }
 
   .popular__name {
     margin: 10px;
-    font-size: 2.5rem;
+  }
+
+  .popular__btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
   }
 
   .gallery__name {
@@ -778,7 +787,6 @@ button {
 
   .gallery__description {
     width: 90%;
-    bottom: 2rem;
     left: 2rem;
   }
 
@@ -788,12 +796,15 @@ button {
   }
 
   .gallery__link::after {
-    top: 6rem;
     left: 2rem;
   }
 
   .gallery__link:hover::after {
     width: 95%;
+  }
+
+  .gallery__name {
+    font-size: 2rem;
   }
 
   .footer {
@@ -811,7 +822,11 @@ button {
 
 @media screen and (max-width: 550px) {
   html {
-    font-size: 5px;
+    font-size: 4px;
+  }
+
+  .header {
+    height: 30rem;
   }
 
   .header__logo,
@@ -823,22 +838,8 @@ button {
     margin-right: 10px;
   }
 
-  .popular,
-  .gallery {
-    padding: 15px 5px;
-  }
-
-  .title-2 {
-    margin-bottom: 15px;
-  }
-
-  .popular__list-item {
-    width: 40vw;
-    padding-bottom: 15px;
-  }
-
-  .popular__btn {
-    font-size: 2.5rem;
+  .gallery__description {
+    bottom: 3rem;
   }
 
   .footer {
@@ -874,14 +875,17 @@ button {
     font-size: 2rem;
   }
 
-  .gallery__description {
-    height: 40%;
-    overflow: hidden;
-  }
-
   .gallery__link::before,
   .gallery__link::after {
     opacity: 0.7;
+  }
+
+  .gallery__name {
+    top: 1.5rem;
+  }
+
+  .gallery__link::after {
+    top: 4rem;
   }
 }
 /* End of Responsive styles */
