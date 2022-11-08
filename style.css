@@ -277,21 +277,24 @@ button {
   justify-content: space-evenly;
   padding: 100px 50px 50px;
   min-height: 100vh;
-  overflow: hidden;
+}
+
+.landing__img {
+  height: 48rem;
 }
 
 .landing__img i {
   color: #fb6107;
-  font-size: 50rem;
+  font-size: 48rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(117, 54, 2);
   position: absolute;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translateX(-50%) scale(0);
   transition: transform 0.3s;
 }
 
 .landing__img i.shown {
   color: #fb6107;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%) scale(1);
   transition: transform 0.3s 0.3s;
 }
 /* End of Landing styles */
@@ -580,6 +583,14 @@ button {
     font-size: 8px;
   }
 
+  .landing__img {
+    height: 43rem;
+  }
+
+  .landing__img i {
+    font-size: 43rem;
+  }
+
   .footer {
     height: 30rem;
   }
@@ -634,6 +645,10 @@ button {
     left: 5rem;
   }
 
+  .title {
+    font-size: 12rem;
+  }
+
   .header__logo,
   .header__sections {
     width: auto;
@@ -666,6 +681,14 @@ button {
     top: 33rem;
   }
 
+  .landing__img {
+    height: 35rem;
+  }
+
+  .landing__img i {
+    font-size: 35rem;
+  }
+
   .popular__list {
     flex-wrap: wrap;
   }
@@ -691,6 +714,18 @@ button {
 }
 
 @media screen and (max-width: 800px) {
+  .title {
+    font-size: 10rem;
+  }
+
+  .landing__img {
+    height: 30rem;
+  }
+
+  .landing__img i {
+    font-size: 30rem;
+  }
+
   .gallery__description {
     font-size: 1.2rem;
   }
@@ -715,10 +750,6 @@ button {
 
   .title-2 {
     font-size: 6rem;
-  }
-
-  .landing__img i {
-    font-size: 40rem;
   }
 
   .header {
